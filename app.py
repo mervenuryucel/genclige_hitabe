@@ -28,7 +28,6 @@ with gr.Blocks() as demo:
         icon = gr.Dropdown(choices=["fas fa-car", "fas fa-star-and-crescent", "fas fa-trophy", "fas fa-heart"], label="İkon Seçimi", value="fas fa-star-and-crescent")
     output_file = gr.File(label="Oluşturulan StyleCloud İndir")
     create_button = gr.Button("Oluştur")
-
     create_button.click(
         create_stylecloud,
         inputs=[file_input, language, icon],
